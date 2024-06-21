@@ -18,6 +18,8 @@ app.use(express.json());
 
 // Definir rutas principales de la API
 app.use('/api/tasks', require('./routes/taskRoutes'));
+app.use('/api/user', require('./routes/userRoutes'));
+
 
 // Puerto para el servidor
 const PORT = process.env.PORT || 5000;
